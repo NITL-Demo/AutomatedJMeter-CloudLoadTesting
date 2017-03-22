@@ -17,7 +17,7 @@ public class CloudJMeterPerfomanceTest {
 		
 		
 		try{
-		    StandardJMeterEngine jmeter = new StandardJMeterEngine();
+		       StandardJMeterEngine jmeter = new StandardJMeterEngine();
 
 			// Initialize Properties, logging, locale, etc.
 			JMeterUtils.loadJMeterProperties("/root/apache-jmeter-3.1/bin/jmeter.properties");
@@ -34,7 +34,10 @@ public class CloudJMeterPerfomanceTest {
 			in.close();
 
 			// Run JMeter Test
+			
+			System.out.println("testPlanTree::::"+testPlanTree);
 			jmeter.configure(testPlanTree);
+			System.out.println("JMeter Test Run Start...");
 			jmeter.run(); 
 		}catch(Exception ex){
 			System.out.println("Exception in JMeter Test::-"+ex.getMessage());
