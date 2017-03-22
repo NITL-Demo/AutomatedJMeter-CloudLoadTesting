@@ -14,7 +14,7 @@ public class CloudJMeterPerfomanceTest {
 	public CloudJMeterPerfomanceTest(){
 		
 			JMeterUtils.setJMeterHome("/root/apache-jmeter-3.1");
-			JMeterUtils.loadJMeterProperties("/root/apache-jmeter-3.1/bin/jmeter.properties");
+			JMeterUtils.initializeProperties("/root/apache-jmeter-3.1/bin/jmeter.properties");
 			
 			
 			JMeterUtils.initLogging();// you can comment this line out to see extra log messages of i.e. DEBUG level
