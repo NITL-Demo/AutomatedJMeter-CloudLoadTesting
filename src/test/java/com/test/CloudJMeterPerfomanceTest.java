@@ -38,6 +38,7 @@ public class CloudJMeterPerfomanceTest {
 			jmeter.run(); 
 		}catch(Exception ex){
 			System.out.println("Exception in JMeter Test::-"+ex.getMessage());
+			ex.printStackTrace();
 		}  
 
 
