@@ -20,7 +20,7 @@ public class CloudJMeterPerfomanceTest {
 		    StandardJMeterEngine jmeter = new StandardJMeterEngine();
 
 			// Initialize Properties, logging, locale, etc.
-			JMeterUtils.loadJMeterProperties("/path/to/your/jmeter/bin/jmeter.properties");
+			JMeterUtils.loadJMeterProperties("/root/apache-jmeter-3.1/bin/jmeter.properties");
 			JMeterUtils.setJMeterHome("/path/to/your/jmeter");
 			JMeterUtils.initLogging();// you can comment this line out to see extra log messages of i.e. DEBUG level
 			JMeterUtils.initLocale();
@@ -29,7 +29,7 @@ public class CloudJMeterPerfomanceTest {
 			SaveService.loadProperties();
 
 			// Load existing .jmx Test Plan
-			FileInputStream in = new FileInputStream("/path/to/your/jmeter/extras/Test.jmx");
+			FileInputStream in = new FileInputStream("/root/apache-jmeter-3.1/bin/PizzaOrder.jmx");
 			HashTree testPlanTree = SaveService.loadTree(in);
 			in.close();
 
