@@ -20,7 +20,8 @@ public class CloudJMeterPerfomanceTest {
 		       StandardJMeterEngine jmeter = new StandardJMeterEngine();
 
 			// Initialize Properties, logging, locale, etc.
-			JMeterUtils.loadJMeterProperties("/root/apache-jmeter-3.1/bin/jmeter.properties");
+			//JMeterUtils.loadJMeterProperties("/root/apache-jmeter-3.1/bin/jmeter.properties");
+			JMeterUtils.initializeProperties("/root/apache-jmeter-3.1/bin/jmeter.properties");
 			JMeterUtils.setJMeterHome("/root/apache-jmeter-3.1");
 			JMeterUtils.initLogging();// you can comment this line out to see extra log messages of i.e. DEBUG level
 			JMeterUtils.initLocale();
